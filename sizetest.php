@@ -41,7 +41,7 @@ $directorySizeBytes = calculateDirectorySize($currentDir);
 $directorySizeFormatted = formatBytes($directorySizeBytes);
 
 // 画面に出力
-echo "ディレクトリ: " . htmlspecialchars($currentDir) . "<br>";
-echo "このディレクトリの合計サイズ: " . htmlspecialchars($directorySizeFormatted) . "<br>";
+echo "This directory: " . htmlspecialchars($currentDir) . "<br>";
+echo "Total size of this directory: " . htmlspecialchars($directorySizeFormatted) . "<br>";
 
 ?>
