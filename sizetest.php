@@ -60,7 +60,7 @@ $directorySizeFormatted = formatBytes($directorySizeBytes);
 
 // 画面に出力 (現在のディレクトリの合計サイズ)
 echo "This directory: " . htmlspecialchars($currentDir) . "<br>";
-echo "Total size of this directory (including subdirectories): " . htmlspecialchars($directorySizeFormatted) . "<br>";
+echo "Total size of this directory (including subdirectories): <br><ul><li>" . htmlspecialchars($directorySizeFormatted) . "</li></ul><br>";
 
 // サブディレクトリの容量を出力
 outputSubdirectorySizes($currentDir);
