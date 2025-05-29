@@ -4,19 +4,19 @@
 $currentDir = __DIR__;
 
 // ディレクトリ内のファイルとディレクトリのサイズ計算関数
-function calculateDirectorySize($dir) {
+function calculateDirectorySize($alldir) {
     $totalSize = 0;
-    $items = scandir($dir);
-    foreach ($items as $item) {
-        if ($item === '.' || $item === '..') {
+    $fileitems = scandir($alldir);
+    foreach ($fileitems as $fileitem) {
+        if ($fileitem === '.' || $fileitem === '..') {
             continue;
         }
-        $path = $dir . '/' . $item;
-        if (is_file($path)) {
-            $totalSize += filesize($path);
-        } elseif (is_dir($path)) {
+        $checkdirpath = $alldir . '/' . $fileitem;
+        if (is_file($checkdirpath)) {
+            $totalSize += filesize($checkdirpath);
+        } elseif (is_dir($checkdirpath)) {
         	// サブディレクトリのサイズ計算
-            $totalSize += calculateDirectorySize($path); 
+            $totalSize += calculateDirectorySize($checkdirpath); 
         }
     }
     return $totalSize;
