@@ -1,5 +1,5 @@
 <h1>Size_Check_PHP</h1><br>
-[ダウンロード (sizetest.php)](https://github.com/hrdmsk/size_check_php/raw/main/to/your/sizetest.php)
+[ダウンロード (sizetest.php)](https://raw.githubusercontent.com/hrdmsk/size_check_php/refs/heads/main/sizetest.php)
 <h2>説明</h2><br>
     <p>
         "sizetest.php"をダウンロードしてください。<br>
